@@ -50,7 +50,7 @@
 - hosts: localhost
   gather_facts: yes
   tasks:
-    - name: wrk 1
+    - name: wrk 2
       command: "wrk -t4 -c5 -d30s http://{{ hostvars | first }}:8080"
       register: wrk_output
 
@@ -67,7 +67,7 @@
 - hosts: localhost
   gather_facts: yes
   tasks:
-    - name: wrk 1
+    - name: wrk 4
       command: "wrk -t4 -c5 -d30s http://{{ hostvars | first }}:8080"
       register: wrk_output
 
@@ -84,7 +84,7 @@
 - hosts: localhost
   gather_facts: yes
   tasks:
-    - name: wrk 1
+    - name: wrk 8
       command: "wrk -t4 -c5 -d30s http://{{ hostvars | first }}:8080"
       register: wrk_output
 
